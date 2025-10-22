@@ -639,80 +639,36 @@
 =================================*/
 
 .p-main-visual{
-  padding: 140px 6% 40px;
+  padding: 120px  0 0;
   width: 100%;
   margin-inline: auto;
-  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  background: url(../images/top/mv-bg.png) no-repeat center center/cover;
 }
 
-.p-main-visual__lead{
-  font-weight: bold;
-  text-align: center;
-  font-size: clamp(1.125rem, 1.034rem + 0.45vw, 1.375rem);
-  white-space: nowrap;
+.p-main-visual img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 0 0 6%;
 }
 
-.p-main-visual__lead span{
-  background: var(--sub-color);
-  color: #fff;
-  font-size: clamp(1.125rem, 1.08rem + 0.23vw, 1.25rem);
-  padding: 8px 15px;
-  margin-right: 8px;
-  border-radius: 10px;
-}
-
-.p-main-visual__lead p{
-  line-height: 2.2;
-  color: var(--sub-color);
-}
-
-.p-main-visual__copy{
-  margin-top: 20px;
-  color: #2b3e53;
-  text-align: center;
-  letter-spacing: .1em;
-}
-
-.p-main-visual__copy p{
-  font-size: clamp(1.125rem, 1.08rem + 0.23vw, 1.25rem);
-  font-weight: bold;
-  display: inline-block;
-  border-bottom: 3px solid var(--accent-color);
-}
-
-.p-main-visual__texts h1{
-  margin-top: 8px;
-  margin-bottom: 16px;
-  font-size: clamp(2.75rem, 2.114rem + 3.18vw, 4.5rem);
-}
-
-.p-main-visual__badge{
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.p-main-visual__badge img{
-  width: 100px;
-  height: 100px;
+@media (min-width: 768px){
+  .p-main-visual img {
+    width: 100%;
+    max-width: 800px;
+    margin-inline: auto;
+  }
 }
 
 @media (min-width: 1024px){
   .p-main-visual{
-    padding: 240px 0 72px;
+    padding: 200px 0 0;
   }
 
-  .p-main-visual__lead{
-    text-align: left;
+  .p-main-visual img {
+    max-width: 1200px;
   }
 
-  .p-main-visual__copy{
-    text-align: left;
-  }
-
-  .p-main-visual__badge{
-    justify-content: flex-start;
-  }
 }
 
 /*================================
@@ -759,7 +715,6 @@
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  width: 76vw;
   margin-inline: auto;
 }
 
@@ -984,6 +939,10 @@
   font-size: clamp(1.125rem, 1.08rem + 0.23vw, 1.25rem);
 }
 
+.p-partial-demolition__item img{
+  aspect-ratio: 3 / 2;
+}
+
 .p-partial-demolition__info{
   margin-top: 16px;
   text-align: center;
@@ -1019,13 +978,15 @@
 
 .p-partial-demolition__heading h2{
   margin-bottom: 24px;
+  max-width: 580px;
+  margin-inline: auto;
 }
 
 
   .p-partial-demolition__time{
-    width: 88px;
-    height: 88px;
-    left: 20%;
+    width: 104px;
+    height: 104px;
+    left: -10%;
   }
 
   .p-partial-demolition__time p{
